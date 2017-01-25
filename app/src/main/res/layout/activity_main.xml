@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.example.pau.calculadora.MainActivity">
+
+    <TextView
+        android:id="@+id/inputArea"
+        android:text="INPUT"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/outputArea"
+        android:text="OUTPUT"
+        android:textSize="30sp"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputArea"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/outputArea" >
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/num7"
+                android:text="7"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/num8"
+                android:text="8"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/num9"
+                android:text="9"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <ImageView
+                android:id="@+id/delButton"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <ImageView
+                android:id="@+id/acButton"
+                android:src="@drawable/ic_replay_black_24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/num4"
+                android:text="4"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/num5"
+                android:text="5"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/num6"
+                android:text="6"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/multButton"
+                android:text="×"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/divButton"
+                android:text="/"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/num1"
+                android:text="1"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/num2"
+                android:text="2"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/num3"
+                android:text="3"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/sumButton"
+                android:text="+"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/restButton"
+                android:text="-"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center" >
+            <TextView
+                android:id="@+id/num0"
+                android:text="0"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/pointButton"
+                android:text="·"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/lBracket"
+                android:text="("
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/rBracket"
+                android:text=")"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/equalsButton"
+                android:text="="
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
