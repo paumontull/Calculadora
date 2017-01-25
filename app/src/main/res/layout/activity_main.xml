@@ -170,7 +170,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless" />
 
             <TextView
-                android:id="@+id/restButton"
+                android:id="@+id/subButton"
                 android:text="-"
                 android:textSize="30sp"
                 android:layout_weight="1"
